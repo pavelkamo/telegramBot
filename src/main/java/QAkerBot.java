@@ -9,7 +9,7 @@ import org.telegram.telegrambots.exceptions.TelegramApiException;
 public class QAkerBot extends TelegramLongPollingBot {
 
     private final String BOT_NAME = "QAkerBot";
-    private final String TOKEN = "440983924:AAH1z5LlafwUD3496NTF8LsnKKdSgZceRqI";
+    private final String TOKEN = "TOKEN";
 
     public static void main(String[] args) {
         ApiContextInitializer.init();
