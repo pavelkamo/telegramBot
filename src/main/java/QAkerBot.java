@@ -29,8 +29,16 @@ public class QAkerBot extends TelegramLongPollingBot {
                 sendMsg(message, "Hello, I'm Bot");
             } else if (message.getText().equals("/kot")){
                 sendMsg(message, "Hello, I'm Bot");
+            } else if (message.getText().equals("/sol")){
+                sendMsg(message, "Cолошенко, срочно поцемай Каминского!))))))");
+            } else if (message.getText().equals("/gps")){
+                sendMsg(message, "GPS activated! iPhone(5s) IMEI: E346DT45424JB3001 ");
+            } else if (message.getText().equals("/message")){
+                sendMsg(message, "Messaging activated! iPhone(5s) IMEI: E346DT45424JB3001 ");
+            } else if (message.getText().equals("/kot_kozel?")){
+                sendMsg(message, "Нет конечно!!! Он же лапочка и самый хороший в мире)))) Его надо срочно поцемать");
             } else {
-                sendMsg(message, "Hello, I'm not real person");
+                sendMsg(message, "Your iPhone(5s) IMEI: E346DT45424JB3001 is trecking!");
             }
         }
     }
@@ -40,7 +48,7 @@ public class QAkerBot extends TelegramLongPollingBot {
         sendMessage.enableMarkdown(true);
         sendMessage.setChatId(message.getChatId().toString());
         sendMessage.setReplyToMessageId(message.getMessageId());
-        sendMessage.setText(s + message.getAudio());
+        sendMessage.setText(s);
         try{
             sendMessage(sendMessage);
         }
